@@ -10,8 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.freddy.myapplication.LoginActivity"
-    android:id="@+id/login_background"
-    android:background="@mipmap/login_background_tinted">
+    android:id="@+id/login_background">
 
 
     <!-- Login progress -->
@@ -36,14 +35,21 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:src="@mipmap/app_logo"
+                android:layout_marginTop="40dp"
+                android:focusableInTouchMode="true"/>
+
             <TextView
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="16dp"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="@string/login_message"
                 android:textColor="#fff"
-                android:textSize="30dp"
+                android:textSize="18dp"
                 android:textAlignment="center"></TextView>
 
             <android.support.design.widget.TextInputLayout
@@ -83,10 +89,14 @@
 
             </android.support.design.widget.TextInputLayout>
 
+
+
             <Button
                 android:id="@+id/email_sign_in_button"
-                style="?android:textAppearanceSmall"
+                style="?android:textAppearanceMedium"
+                android:textColor="#fff"
                 android:layout_width="match_parent"
+                android:background="@drawable/login_login_button"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
                 android:text="@string/action_sign_in"
